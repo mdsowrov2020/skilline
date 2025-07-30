@@ -15,30 +15,44 @@ const About = () => {
           className="w-[73%]"
         />
 
-        <div className="flex justify-between items-center gap-16 mt-16">
-          <div className="relative h-[300px] w-full rounded-4xl">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-16 mt-16">
+          <div className="group relative h-[300px] w-full rounded-2xl overflow-hidden transition-all">
             <div className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-center">
-              <h4 className="text-2xl text-white mb-3">FOR INSTRUCTORS</h4>
+              <h4 className="text-md md:text-2xl text-white mb-3">
+                FOR INSTRUCTORS
+              </h4>
               <Button
                 size="large"
-                className="bg-transparent border border-white text-white hover:bg-sky-400/80 transition-all duration-300 hover:border-transparent"
+                className="bg-transparent border border-white text-white hover:bg-sky-400/80 transition-all duration-300 hover:border-transparent text-sm md:text-base w-[200px] md:w-auto"
               >
                 Start a class today
               </Button>
             </div>
-            <Image src="/images/instructor.png" alt="Instructor" fill />
+            <Image
+              src="/images/instructor.png"
+              alt="Instructor"
+              fill
+              className="group-hover:scale-125 transition-all duration-700"
+            />
           </div>
-          <div className="relative h-[300px] w-full rounded-4xl">
+          <div className="group relative h-[300px] w-full rounded-2xl overflow-hidden transition-all">
             <div className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-center">
-              <h4 className="text-2xl text-white mb-3">FOR STUDENTS</h4>
+              <h4 className="text-md md:text-2xl text-white mb-3">
+                FOR STUDENTS
+              </h4>
               <Button
                 size="large"
-                className="bg-transparent border border-white text-white hover:bg-sky-400/80 transition-all duration-300 hover:border-transparent"
+                className="bg-transparent border border-white text-white hover:bg-sky-400/80 transition-all duration-300 hover:border-transparent text-sm md:text-base w-[200px] md:w-auto"
               >
                 Enter access code
               </Button>
             </div>
-            <Image src="/images/student.png" alt="Instructor" fill />
+            <Image
+              src="/images/student.png"
+              alt="Instructor"
+              fill
+              className="group-hover:scale-125 transition-all duration-700"
+            />
           </div>
         </div>
       </Box>
