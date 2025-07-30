@@ -4,6 +4,7 @@ import CloudSoftware from "../sections/CloudSoftware";
 import About from "../sections/About";
 import Service from "../sections/services/Service";
 import Features from "../sections/features/Features";
+import Tools from "../sections/Tools/Tools";
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
       <About />
       <Service />
       <Features />
+      <Tools />
     </main>
   );
 };
