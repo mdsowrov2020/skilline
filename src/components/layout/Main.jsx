@@ -5,6 +5,7 @@ import About from "../sections/About";
 import Service from "../sections/services/Service";
 import Features from "../sections/features/Features";
 import Tools from "../sections/Tools/Tools";
+import Quize from "../sections/quizes/Quize";
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
       <Service />
       <Features />
       <Tools />
+      <Quize />
     </main>
   );
 };
